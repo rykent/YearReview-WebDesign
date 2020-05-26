@@ -1,0 +1,59 @@
+body {
+	margin: 0;
+}
+
+.slide-content { margin: 0 auto; width: 960px; }
+
+#titleSlide {
+	background: #271F30;
+	height: 700px;
+	color: #FFFFFF;
+	padding: 20px 50px 100px 50px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#highlight1 {
+	background: url('openworld.jpg') 50% 0 no-repeat fixed;
+	height: 700px;
+	color: #FFFFFF;
+	padding: 20px 50px 100px 50px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#highlight2 {
+	background: #9AD1D4;
+	height: 700px;
+	color: #FFFFFF;
+	padding: 20px 50px 100px 50px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+#highlight3 {
+	background: url('corona.jpeg') 50% 0 no-repeat fixed;
+	height: 700px;
+	color: #FFFFFF;
+	padding: 20px 50px 100px 50px;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.slide-content h2 {
+	font-size: 80px;
+	background: #0F0326;
+	color: #FFFFFF;
+	border-radius: 10px;
+	padding: 10px;
+	width: 500px;
+}
+
+.slide-content p {
+	font-size: 30px;
+	background: grey;
+	color: #FFFFFF;
+	border-radius: 10px;
+	width: 400px;
+	padding: 20px;
+}
