@@ -1,43 +1,90 @@
 body {
 	margin: 0;
+	overflow: hidden;
+	background: #353535;
+}
+
+.navbar {
+	position:fixed;
+	display: inline-block;
+	width:100%;
+	font-size: 20px;
+	background: #343633;
+	padding: 0px;
+	margin: 0px;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: white;
+	text-align: center;
+	height: 25px;
+	padding: 10px;
+	float: left;
+}
+
+.navbar a:hover {
+	background: white;
+	color: black;
+}
+
+.active {
+	background: #86bbd8;
+}
+
+
+.parent {
+	height: 100vh;
+	scroll-snap-type: y mandatory;
+	scroll-snap-type: mandatory;
+  	scroll-snap-points-y: repeat(100vh);
+  	overflow-y: scroll;
 }
 
 .slide-content { margin: 0 auto; width: 960px; }
 
 #titleSlide {
-	background: #271F30;
-	height: 700px;
+	background: #353535;
+	height: 100vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
+	scroll-snap-align: start;
 }
 
 #highlight1 {
 	background: url('openworld.jpg') 50% 0 no-repeat fixed;
-	height: 700px;
+	height: 100vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
+	scroll-snap-align: start;
 }
 
 #highlight2 {
 	background: #9AD1D4;
-	height: 700px;
+	height: 100vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
+	scroll-snap-align: start;
 }
 
 #highlight3 {
 	background: url('corona.jpeg') 50% 0 no-repeat fixed;
-	height: 700px;
+	height: 100vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
+	scroll-snap-align: start;
+}
+
+.slide-content h1 {
+	font-size: 100px;
 }
 
 .slide-content h2 {
