@@ -4,6 +4,7 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta charset="utf-8">
 	<title>Year in Review</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </head>
 <body>
 	<div class="navbar">
@@ -16,7 +17,10 @@
 		<h1 style="margin-top: 30px; ">School Year in Review</h1>
 		<div id="imageContainer" style="text-align: center;">
 			<img src="schoool.jpeg">
-			<h3 style="color: lightgrey; font-size: 60px;"><img height=100 src="down.png">View Highlights<img height=100 src="down.png"></h3>
+			<div id="buttonContainer">	
+			<h3 style="color: lightgrey; font-size: 60px;"><img class="arrow" height=100 src="down.png">View Highlights<img class="arrow" height=100 src="down.png"></h3>
+			<h6 style="position: relative; top: -50px;">Scroll or Click Here To Slideshow.</h6>
+			</div>
 		</div>
 		</div>
 	</div>
@@ -30,6 +34,7 @@
 		<div class="slide-content">
 		<h2>Swim Team</h2>
 		<p>Another highlight was the swim team actually had meets this year. This was a huge improvement because it kinda sucked having practice without any meets last year.</p>
+		<img style="position: relative; top: -350px; left: 500px;" height=500 src="swim.png">
 		</div>
 	</div>
 	<div id="highlight3">
@@ -39,5 +44,6 @@
 		</div>
 	</div>
 	</div>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

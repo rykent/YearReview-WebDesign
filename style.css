@@ -1,6 +1,5 @@
 body {
 	margin: 0;
-	overflow: hidden;
 	background: #353535;
 }
 
@@ -9,7 +8,7 @@ body {
 	display: inline-block;
 	width:100%;
 	font-size: 20px;
-	background: #343633;
+	background: #353535;
 	padding: 0px;
 	margin: 0px;
 }
@@ -35,52 +34,67 @@ body {
 
 .parent {
 	height: 100vh;
-	scroll-snap-type: y mandatory;
+	/*scroll-snap-type: y mandatory;
 	scroll-snap-type: mandatory;
   	scroll-snap-points-y: repeat(100vh);
-  	overflow-y: scroll;
+  	overflow-y: scroll;*/
 }
 
 .slide-content { margin: 0 auto; width: 960px; }
 
 #titleSlide {
 	background: #353535;
-	height: 100vh;
+	height: 90vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
-	scroll-snap-align: start;
+	/*scroll-snap-align: start;*/
 }
 
 #highlight1 {
 	background: url('openworld.jpg') 50% 0 no-repeat fixed;
-	height: 100vh;
+	height: 90vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
-	scroll-snap-align: start;
+	/*scroll-snap-align: start;*/
 }
+
+@keyframes thing {
+	0%	{top: 0;}
+	50% {top: 50px;}
+	100%{top: 0;}
+}
+
+.arrow {
+	position: relative;
+	top: 0;
+	animation-name: thing;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+}
+
 
 #highlight2 {
 	background: #9AD1D4;
-	height: 100vh;
+	height: 90vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
-	scroll-snap-align: start;
+	/*scroll-snap-align: start;*/
 }
 
 #highlight3 {
 	background: url('corona.jpeg') 50% 0 no-repeat fixed;
-	height: 100vh;
+	height: 90vh;
 	color: #FFFFFF;
 	padding: 20px 50px 100px 50px;
 	background-size: cover;
 	overflow: hidden;
-	scroll-snap-align: start;
+	/*scroll-snap-align: start;*/
 }
 
 .slide-content h1 {
@@ -103,4 +117,20 @@ body {
 	border-radius: 10px;
 	width: 400px;
 	padding: 20px;
+}
+
+
+#sometext {
+	border-radius: 10px;
+	background: grey;
+	color: #FFFFFF;
+	padding: 20px;
+	font-size: 30px;
+	margin: 0 200px;
+	animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
